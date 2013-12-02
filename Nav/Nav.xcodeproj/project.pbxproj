@@ -26,6 +26,7 @@
 		001AD875184C7EE0001DDE8A /* BIDDisclosureButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001AD874184C7EE0001DDE8A /* BIDDisclosureButtonController.m */; };
 		001AD878184C7F3F001DDE8A /* BIDDisclosureDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001AD877184C7F3F001DDE8A /* BIDDisclosureDetailController.m */; };
 		001AD87A184C8111001DDE8A /* BIDDisclosureDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001AD879184C8110001DDE8A /* BIDDisclosureDetail.xib */; };
+		001AD87D184C8C48001DDE8A /* BIDCheckListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001AD87C184C8C48001DDE8A /* BIDCheckListController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,8 @@
 		001AD876184C7F3F001DDE8A /* BIDDisclosureDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDDisclosureDetailController.h; sourceTree = "<group>"; };
 		001AD877184C7F3F001DDE8A /* BIDDisclosureDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDDisclosureDetailController.m; sourceTree = "<group>"; };
 		001AD879184C8110001DDE8A /* BIDDisclosureDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIDDisclosureDetail.xib; sourceTree = "<group>"; };
+		001AD87B184C8C48001DDE8A /* BIDCheckListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDCheckListController.h; sourceTree = "<group>"; };
+		001AD87C184C8C48001DDE8A /* BIDCheckListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDCheckListController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				001AD874184C7EE0001DDE8A /* BIDDisclosureButtonController.m */,
 				001AD85F184C7665001DDE8A /* BIDSecondLevelViewController.h */,
 				001AD860184C7665001DDE8A /* BIDSecondLevelViewController.m */,
+				001AD87B184C8C48001DDE8A /* BIDCheckListController.h */,
+				001AD87C184C8C48001DDE8A /* BIDCheckListController.m */,
 			);
 			path = Nav;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 				001AD861184C7665001DDE8A /* BIDSecondLevelViewController.m in Sources */,
 				001AD875184C7EE0001DDE8A /* BIDDisclosureButtonController.m in Sources */,
 				001AD878184C7F3F001DDE8A /* BIDDisclosureDetailController.m in Sources */,
+				001AD87D184C8C48001DDE8A /* BIDCheckListController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

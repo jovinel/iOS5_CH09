@@ -48,7 +48,23 @@
 }
 
 - (IBAction)textFieldDone:(id)sender {
-    [sender resignFirstResponder];
+    UITableViewCell *cell = (UITableViewCell *)[[sender superview] superview];
+    UITableView *table = (UITableView *)[cell superview];
+    NSIndexPath *textFieldIndexPath = [table indexPathForCell:cell];
+    NSUInteger row = [textFieldIndexPath row];
+    row++;
+    if (row >= kNumberOfEditableRows) {
+        row = 0;
+    }
+    NSIndexPath *newPath = [NSIndexPath indexPathForRow:row inSection:0];
+    UITableViewCell *nextCell = [self.tableView cellForRowAtIndexPath:newPath];
+    UITextField *nextField = nil;
+    for (UIView *oneView in nextCell.contentView.subviews) {
+        if ([oneView isMemberOfClass:[UITextField class]])
+            nextField = (UITextField *)oneView;
+    }
+    [nextField becomeFirstResponder];
+     
 }
 
 #pragma mark -
@@ -90,7 +106,6 @@
         UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(90, 12, 200, 25)];
         textField.clearsOnBeginEditing = NO;
         [textField setDelegate:self];
-        textField.returnKeyType = UIReturnKeyDone;
         [textField addTarget:self action:@selector(textFieldDone:) forControlEvents:UIControlEventEditingDidEndOnExit];
         [cell.contentView addSubview:textField];
     }

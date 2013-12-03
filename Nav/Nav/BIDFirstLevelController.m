@@ -13,6 +13,7 @@
 #import "BIDRowControlsController.h"
 #import "BIDMoveMeController.h"
 #import "BIDDeletemeController.h"
+#import "BIDPresidentsViewController.h"
 
 @implementation BIDFirstLevelController
 @synthesize controllers;
@@ -52,6 +53,11 @@
     deleteMeController.rowImage = [UIImage imageNamed:@"deleteMeIcon.png"];
     [array addObject:deleteMeController];
     
+    // BIDPresident View/Edit
+    BIDPresidentsViewController *presidentsViewController = [[BIDPresidentsViewController alloc] initWithStyle:UITableViewStylePlain];
+    presidentsViewController.title = @"Detail Edit";
+    presidentsViewController.rowImage = [UIImage imageNamed:@"detailEditIcon.png"];
+    [array addObject:presidentsViewController];
     
     self.controllers = array;
 }

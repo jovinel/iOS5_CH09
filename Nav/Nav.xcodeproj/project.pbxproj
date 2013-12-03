@@ -29,6 +29,8 @@
 		001AD87D184C8C48001DDE8A /* BIDCheckListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001AD87C184C8C48001DDE8A /* BIDCheckListController.m */; };
 		00BB82B5184D79E80088CA7E /* BIDRowControlsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BB82B4184D79E80088CA7E /* BIDRowControlsController.m */; };
 		00BB82B9184D824D0088CA7E /* BIDMoveMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BB82B8184D824C0088CA7E /* BIDMoveMeController.m */; };
+		00BB82BB184D88EB0088CA7E /* computers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 00BB82BA184D88EB0088CA7E /* computers.plist */; };
+		00BB82BE184D890A0088CA7E /* BIDDeletemeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BB82BD184D890A0088CA7E /* BIDDeletemeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,9 @@
 		00BB82B4184D79E80088CA7E /* BIDRowControlsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDRowControlsController.m; sourceTree = "<group>"; };
 		00BB82B7184D824C0088CA7E /* BIDMoveMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDMoveMeController.h; sourceTree = "<group>"; };
 		00BB82B8184D824C0088CA7E /* BIDMoveMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDMoveMeController.m; sourceTree = "<group>"; };
+		00BB82BA184D88EB0088CA7E /* computers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = computers.plist; sourceTree = "<group>"; };
+		00BB82BC184D890A0088CA7E /* BIDDeletemeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDDeletemeController.h; sourceTree = "<group>"; };
+		00BB82BD184D890A0088CA7E /* BIDDeletemeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDDeletemeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,7 @@
 		001AD84B184C684E001DDE8A /* Nav */ = {
 			isa = PBXGroup;
 			children = (
+				00BB82BA184D88EB0088CA7E /* computers.plist */,
 				001AD862184C7E7E001DDE8A /* Images */,
 				001AD854184C684E001DDE8A /* BIDAppDelegate.h */,
 				001AD855184C684F001DDE8A /* BIDAppDelegate.m */,
@@ -130,6 +136,8 @@
 				00BB82B4184D79E80088CA7E /* BIDRowControlsController.m */,
 				00BB82B7184D824C0088CA7E /* BIDMoveMeController.h */,
 				00BB82B8184D824C0088CA7E /* BIDMoveMeController.m */,
+				00BB82BC184D890A0088CA7E /* BIDDeletemeController.h */,
+				00BB82BD184D890A0088CA7E /* BIDDeletemeController.m */,
 			);
 			path = Nav;
 			sourceTree = "<group>";
@@ -220,6 +228,7 @@
 				001AD871184C7E7E001DDE8A /* moveMeIcon.png in Resources */,
 				001AD872184C7E7E001DDE8A /* rowControlsIcon.png in Resources */,
 				001AD87A184C8111001DDE8A /* BIDDisclosureDetail.xib in Resources */,
+				00BB82BB184D88EB0088CA7E /* computers.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +248,7 @@
 				001AD87D184C8C48001DDE8A /* BIDCheckListController.m in Sources */,
 				00BB82B5184D79E80088CA7E /* BIDRowControlsController.m in Sources */,
 				00BB82B9184D824D0088CA7E /* BIDMoveMeController.m in Sources */,
+				00BB82BE184D890A0088CA7E /* BIDDeletemeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

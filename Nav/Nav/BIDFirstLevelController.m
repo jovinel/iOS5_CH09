@@ -12,6 +12,7 @@
 #import "BIDCheckListController.h"
 #import "BIDRowControlsController.h"
 #import "BIDMoveMeController.h"
+#import "BIDDeletemeController.h"
 
 @implementation BIDFirstLevelController
 @synthesize controllers;
@@ -44,6 +45,13 @@
     moveMeController.title = @"Move Me";
     moveMeController.rowImage = [UIImage imageNamed:@"moveMeIcon.png"];
     [array addObject:moveMeController];
+    
+    //Delete Me
+    BIDDeletemeController *deleteMeController = [[BIDDeletemeController alloc] initWithStyle:UITableViewStylePlain];
+    deleteMeController.title = @"Delete Me";
+    deleteMeController.rowImage = [UIImage imageNamed:@"deleteMeIcon.png"];
+    [array addObject:deleteMeController];
+    
     
     self.controllers = array;
 }
